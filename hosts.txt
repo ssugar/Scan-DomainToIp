@@ -84,6 +84,7 @@ antivirus
 ao
 ap
 apache
+api
 apollo
 app
 app01
@@ -174,6 +175,7 @@ boston
 boulder
 boy
 br
+brand
 bravo
 brazil
 britian
@@ -198,6 +200,7 @@ bulletins
 burn
 burner
 buscador
+business
 buy
 bv
 bw
@@ -546,6 +549,7 @@ download
 downloads
 downtown
 dragon
+driver
 drupal
 dsl
 dyn
@@ -693,6 +697,7 @@ general
 george
 georgia
 germany
+get
 gf
 gg
 gh
@@ -928,8 +933,10 @@ logs
 london
 longbeach
 losangeles
+lost
 lotus
 louisiana
+love
 lr
 ls
 lt
@@ -1281,6 +1288,7 @@ pdc
 pe
 pegasus
 pennsylvania
+people
 peoplesoft
 personal
 pf
@@ -1461,6 +1469,7 @@ sb
 sbs
 sc
 scanner
+science
 schedules
 scotland
 scotty
@@ -1683,6 +1692,12 @@ trinidad
 trinity
 ts
 ts1
+ts2
+ts3
+ts4
+ts5
+ts10
+ts20
 tt
 tucson
 tulsa
