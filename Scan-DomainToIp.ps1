@@ -4,8 +4,7 @@
   [ValidateScript({
     If(Test-Path $_){$true}else{Throw "Invalid wordlist file given: $_"}
   })]
-  [string[]]$wordlist,
-  $onlyTrueFlag=0
+  [string[]]$wordlist
 )
 
 
@@ -14,15 +13,17 @@ $lines = $file.Split([Environment]::NewLine)
 foreach($line in $lines)
 {
     $hostname = $line + "." + $dns
+    write-progress -activity "Scanning supplied wordlist" -Status "Hostname: $hostname"
     Try
     {
         [System.Net.Dns]::GetHostAddresses($hostname) | foreach {write-host $hostname "resolves to" $_.IPAddressToString }
     }
     Catch
     {
-        if($onlyTruFlag -eq 0){write-host $hostname "not found"}
+        write-debug "$hostname not found"
     }
 }
+write-progress -activity "Scanning supplied wordlist" -Completed
 
 $mxRecords = Nslookup -type=mx $dns 2> $null
 $x=0
